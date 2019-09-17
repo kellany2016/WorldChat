@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'log_in_Screen.dart';
+//import 'log_in_Screen.dart';
+import 'login_screen2.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      home: LogIn(),
+      home: LoginScreen(),
     );
   }
 }
