@@ -9,11 +9,36 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 class ChatScreen extends StatefulWidget
 {
+  //  @override
+  // Widget build(BuildContext context){
+  //   return MaterialApp(
+  //         home: Scaffold(
+  //               appBar: AppBar(
+  //         title: Row(
+  //             mainAxisAlignment: MainAxisAlignment.center,
+  //             children: [
+  //                 Image.asset(
+  //                'assets/images/earth.png',
+  //                 fit: BoxFit.contain,
+  //                 height: 32,
+  //               ),
+  //             Container(
+  //                 padding: const EdgeInsets.all(8.0), child: Text('World Chat'),
+  //                 )
+  //           ],
+
+  //         ),
+  // ),
+  //         )
+  //       );
+  //     }
+  
   @override
   State<StatefulWidget> createState() {
     return Chatting();
   }
-}
+  }
+
 class Chatting extends State<ChatScreen>{
   String  textFieldValue;
   TextEditingController controlText = TextEditingController();
@@ -143,7 +168,7 @@ class MessageBubble extends StatelessWidget{
                                      crossAxisAlignment: isCurrentUser ? CrossAxisAlignment.end : CrossAxisAlignment.start,
                                       children: <Widget>[
                                        Material(
-                                          color: isCurrentUser ? Colors.purple[600]: Colors.green,
+                                          color: isCurrentUser ? Colors.purple[600]: Colors.white24,
                                           elevation: 5.0,
                                           borderRadius: BorderRadius.all(Radius.elliptical(20, 40)),
                                           child: Padding(
